@@ -11,7 +11,7 @@ io.on('connection', function (socket) {
     console.log('a user connected!');
 
     // In order to send an event to everyone, Socket.IO gives us the `io.emit`.
-    // io.emit('some event', { for: ''});
+    // io.emit('some event', { for: 'everyone'});
 
     // If you want to send a message to everyone, except for a certain socket,
     // we have the `broadcast` flag:
