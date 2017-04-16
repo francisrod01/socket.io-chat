@@ -1,0 +1,2 @@
+#!/bin/bash
+*.rb linguist-language=Nodejs
