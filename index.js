@@ -10,10 +10,19 @@ app.get('/', function (req, res) {
 io.on('connection', function (socket) {
     console.log('a user connected!');
 
+    // In order to send an event to everyone, Socket.IO gives us the `io.emit`.
+    // io.emit('some event', { for: ''});
+
+    // If you want to send a message to everyone, except for a certain socket,
+    // we have the `broadcast` flag:
+    socket.broadcast.emit('hi human! :)');
+
     // In this case, for the sake of simplicity we'll send the message to everyone,
     // including the sender.
     socket.on('chat message', function (msg) {
         console.log('message: ' + msg)
+
+        io.emit('chat message', msg)
     })
 
     socket.on('disconnect', function () {
@@ -24,6 +33,3 @@ io.on('connection', function (socket) {
 http.listen(3000, function () {
     console.log('listening on *:3000')
 })
-
-// continue later here:
-// https://socket.io/get-started/chat/
