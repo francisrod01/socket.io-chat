@@ -4,6 +4,8 @@ Create a simple chat with nodejs and socket.io packages
 
 Author: [Francis Rodrigues](https://bitbucket.org/devtosystems)
 
+Get stared with [chat-application](https://socket.io/get-started/chat/)
+
 ## What is this repository for? ##
 
 * Quick summary
