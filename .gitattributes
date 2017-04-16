@@ -1,2 +1,2 @@
 #!/bin/bash
-*.rb linguist-language=Javascript
+*.rb linguist-language=JavaScript
