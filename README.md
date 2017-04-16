@@ -19,3 +19,7 @@ Get stared with [chat-application](https://socket.io/get-started/chat/)
 ## Who do I talk to? ##
 
 * A public web-chat in realtime using `nodejs` and `socket.io`
+
+## License type ##
+
+* MIT *
